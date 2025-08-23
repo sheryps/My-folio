@@ -13,7 +13,7 @@ interface FormData {
 
 type FormStatus = 'idle' | 'loading' | 'success' | 'error';
 
-const page = () => {
+const Page = () => {
     const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -179,4 +179,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

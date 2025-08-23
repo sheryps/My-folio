@@ -27,7 +27,7 @@ const Navbar = () => {
     <div className="container max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-xl font-bold text-primary">
-            Sherry's Folio&trade;
+            Sherry&apos;s Folio&trade;
           </Link>
 
           {/* dsettop menu */}
@@ -69,7 +69,7 @@ const Navbar = () => {
             isMobileMenuOpen &&(
                 <div className="md:hidden">
                     <div className="py-4 space-y-4">
-                        {menuItems.map((item,index)=>(
+                        {menuItems.map((item)=>(
                             <div key={item.href}>
                                 <Link
                                 href={item.href}
