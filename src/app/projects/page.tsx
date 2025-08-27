@@ -5,9 +5,10 @@ import { projects } from '@/contents/projects'
 import Image from 'next/image'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import { cardHover, cardHoverTransition, fadeIn,fadeInUp } from '@/utils/animations'
 const Page = () => {
   return (
-    <div className="container max-w-7xl mx-auto py-12">
+    <div className="container max-w-7xl mx-auto py-12 pt-30">
       <motion.h1 
         className="text-4xl font-bold mb-4 text-center"
         initial={{ opacity: 0, y: -20 }}
@@ -32,6 +33,9 @@ const Page = () => {
           <motion.div
             key={index}
             className="bg-white dark:bg-dark/50 rounded-lg shadow-md overflow-hidden"
+            variants={fadeInUp}
+            {...cardHover}
+            transition={cardHoverTransition}
           >
             <motion.div 
               className="aspect-video bg-gray-200 dark:bg-gray-800"

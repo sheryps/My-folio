@@ -50,7 +50,7 @@ const Page = () => {
     }))
   }
   return (
-    <div className="container max-w-7xl mx-auto py-12">
+    <div className="container max-w-7xl mx-auto py-12 pt-35">
       <motion.h1 {...fadeInUp} className="text-4xl font-bold mb-8 text-center">Contact Me</motion.h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* contact information */}

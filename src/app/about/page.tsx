@@ -8,7 +8,8 @@ import {
   fadeIn, 
   staggerContainer, 
   cardHover, 
-  cardHoverSmall 
+  cardHoverSmall, 
+  cardHoverTransition
 } from '@/utils/animations'
 const Page = () => {
   return (
@@ -39,6 +40,8 @@ const Page = () => {
         >
           <motion.div 
             variants={fadeInUp}
+            {...cardHover}
+            transition={cardHoverTransition}
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
           >
             <FaCode size={20}  color='blue'/>
@@ -53,6 +56,8 @@ const Page = () => {
           
           <motion.div 
             variants={fadeInUp}
+            {...cardHover}
+            transition={cardHoverTransition}
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
           >
             <FaLaptopCode size={20} color='blue'/>
@@ -67,6 +72,8 @@ const Page = () => {
           
           <motion.div 
             variants={fadeInUp}
+            {...cardHover}
+            transition={cardHoverTransition}
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md" >
             <FaGraduationCap size={20} color='blue'/>
             <h3 className="text-xl font-semibold mb-2 mt-5">Tools & Others</h3>
@@ -97,6 +104,8 @@ const Page = () => {
           <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
             variants={fadeInUp}
+            {...cardHoverSmall}
+            transition={cardHoverTransition}
           >
             <h3 className="text-xl font-semibold mb-2">Senior Full Stack Developer</h3>
             <p className="text-primary mb-2">Company Name • 2020 - Present</p>
@@ -109,7 +118,8 @@ const Page = () => {
           
           <motion.div 
             variants={fadeInUp}
-            
+            {...cardHoverSmall}
+            transition={cardHoverTransition}
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
           >
             <h3 className="text-xl font-semibold mb-2">Full Stack Developer</h3>
@@ -137,13 +147,52 @@ const Page = () => {
           initial="initial"
           animate="animate"
           className="max-w-3xl mx-auto">
+            {/* PGDAC */}
+            <motion.div 
+            variants={fadeInUp}
+            {...cardHoverSmall}
+            transition={cardHoverTransition}
+            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-2">PG Diploma in Automation and Control</h3>
+            <p className="text-primary mb-2">Saintgits College of Engineering • 2018 - 2020</p>
+            <p className="text-secondary">
+              Graduated with PG Diploma in PLC,Scada Programming.
+            </p>
+          </motion.div>
+            {/* btech */}
           <motion.div 
             variants={fadeInUp}
-            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">Bachelor of Science in Computer Science</h3>
-            <p className="text-primary mb-2">University Name • 2014 - 2018</p>
+            {...cardHoverSmall}
+            transition={cardHoverTransition}
+            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md mt-3">
+            <h3 className="text-xl font-semibold mb-2">Bachelor of Science in Electronics & Instrumentation</h3>
+            <p className="text-primary mb-2">Saintgits College of Engineering • 2014 - 2018</p>
             <p className="text-secondary">
-              Graduated with honors. Focused on software engineering and web development.
+              Graduated with honors. Focused on Engineering.
+            </p>
+          </motion.div>
+          {/* higher secondary */}
+          <motion.div 
+            variants={fadeInUp}
+            {...cardHoverSmall}
+            transition={cardHoverTransition}
+            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md mt-3">
+            <h3 className="text-xl font-semibold mb-2">Higher Secondary Education</h3>
+            <p className="text-primary mb-2">IHRD Technical Higher Secondary School • 2012 - 2014</p>
+            <p className="text-secondary">
+              Graduated +2,Qualified with Computer Programming and developed Programming Skills.
+            </p>
+          </motion.div>
+          {/* 10 th */}
+            <motion.div 
+            variants={fadeInUp}
+            {...cardHoverSmall}
+            transition={cardHoverTransition}
+            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md mt-3">
+            <h3 className="text-xl font-semibold mb-2">Secondary Education</h3>
+            <p className="text-primary mb-2">IHRD Technical Higher Secondary School • 2009 - 2012</p>
+            <p className="text-secondary">
+              Graduated 10-th,Learned Computer Programming and started to have keen interest in coding.
             </p>
           </motion.div>
         </motion.div>
