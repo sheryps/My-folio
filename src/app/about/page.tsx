@@ -10,7 +10,7 @@ import {
   cardHover, 
   cardHoverSmall 
 } from '@/utils/animations'
-const page = () => {
+const Page = () => {
   return (
         <div className="container max-w-7xl mx-auto py-12 pt-20">
       <motion.h1 className="text-4xl font-bold mb-8 text-center pt-5" {...fadeInDown}>
@@ -39,7 +39,6 @@ const page = () => {
         >
           <motion.div 
             variants={fadeInUp}
-            {...cardHover}
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
           >
             <FaCode size={20}  color='blue'/>
@@ -54,7 +53,6 @@ const page = () => {
           
           <motion.div 
             variants={fadeInUp}
-            {...cardHover}
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
           >
             <FaLaptopCode size={20} color='blue'/>
@@ -69,7 +67,6 @@ const page = () => {
           
           <motion.div 
             variants={fadeInUp}
-            {...cardHover}
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md" >
             <FaGraduationCap size={20} color='blue'/>
             <h3 className="text-xl font-semibold mb-2 mt-5">Tools & Others</h3>
@@ -100,7 +97,6 @@ const page = () => {
           <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
             variants={fadeInUp}
-            {...cardHoverSmall}
           >
             <h3 className="text-xl font-semibold mb-2">Senior Full Stack Developer</h3>
             <p className="text-primary mb-2">Company Name • 2020 - Present</p>
@@ -113,7 +109,7 @@ const page = () => {
           
           <motion.div 
             variants={fadeInUp}
-            {...cardHoverSmall}
+            
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
           >
             <h3 className="text-xl font-semibold mb-2">Full Stack Developer</h3>
@@ -143,7 +139,6 @@ const page = () => {
           className="max-w-3xl mx-auto">
           <motion.div 
             variants={fadeInUp}
-            {...cardHoverSmall}
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">Bachelor of Science in Computer Science</h3>
             <p className="text-primary mb-2">University Name • 2014 - 2018</p>
@@ -157,4 +152,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

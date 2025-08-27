@@ -5,7 +5,7 @@ import { projects } from '@/contents/projects'
 import Image from 'next/image'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { motion } from 'framer-motion'
-const page = () => {
+const Page = () => {
   return (
     <div className="container max-w-7xl mx-auto py-12">
       <motion.h1 
@@ -119,4 +119,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
