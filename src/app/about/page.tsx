@@ -69,6 +69,20 @@ const Page = () => {
               <li>MongoDB</li>
             </ul>
           </motion.div>
+                    <motion.div 
+            variants={fadeInUp}
+            {...cardHover}
+            transition={cardHoverTransition}
+            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+          >
+            <FaLaptopCode size={20} color='blue'/>
+            <h3 className="text-xl font-semibold mb-2 mt-5">Mobile Development</h3>
+            <ul className="text-secondary space-y-2">
+              <li>React-Native</li>
+              <li>Flutter</li>
+              <li>Dart Language</li>
+            </ul>
+          </motion.div>
           
           <motion.div 
             variants={fadeInUp}
@@ -79,7 +93,7 @@ const Page = () => {
             <h3 className="text-xl font-semibold mb-2 mt-5">Tools & Others</h3>
             <ul className="text-secondary space-y-2">
               <li>Git / GitHub</li>
-              <li>Docker</li>
+              <li>FireBase</li>
               <li>AWS</li>
               <li>CI/CD</li>
             </ul>
