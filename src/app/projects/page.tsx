@@ -36,7 +36,7 @@ const Page = () => {
             <motion.div 
               className="aspect-video bg-gray-200 dark:bg-gray-800"
               whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}
+              transition={{ type: "spring" as const, stiffness: 300 }}
             >
               <Image
                 src={project.image}
@@ -51,7 +51,7 @@ const Page = () => {
               <motion.h3 
                 className="text-xl font-semibold mb-2"
                 whileHover={{ x: 5 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: "spring" as const, stiffness: 300 }}
               >
                 {project.title}
               </motion.h3>
