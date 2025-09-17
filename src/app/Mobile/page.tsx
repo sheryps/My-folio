@@ -17,7 +17,7 @@ export default function MobileAppsPage() {
       <div className="bg-white shadow-lg rounded-2xl p-10 max-w-lg text-center">
         <h2 className="text-2xl font-semibold mb-4">Exciting things are coming!</h2>
         <p className="text-gray-600 mb-6">
-          I'm currently building amazing mobile apps. Soon, this section will showcase screenshots, videos, and download links for my projects.
+          I&apos;m currently building amazing mobile apps. Soon&lsquo; this section will showcase screenshots&lsquo; videos&lsquo; and download links for my projects.
         </p>
 
         <Link
