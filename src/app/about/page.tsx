@@ -1,6 +1,7 @@
 'use client'
 
-import { FaCode, FaLaptopCode, FaGraduationCap } from 'react-icons/fa'
+import { FaCode, FaLaptopCode, FaGraduationCap,FaMobileAlt,FaGithub, FaGit } from 'react-icons/fa'
+import { SiMongodb,SiVercel } from 'react-icons/si'
 import {motion} from 'framer-motion'
 import { 
   fadeInUp, 
@@ -38,6 +39,8 @@ const Page = () => {
           animate="animate"
           className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
+
+          {/* frontend */}
           <motion.div 
             variants={fadeInUp}
             {...cardHover}
@@ -47,13 +50,13 @@ const Page = () => {
             <FaCode size={20}  color='blue'/>
             <h3 className="text-xl font-semibold mb-2 mt-5">Frontend</h3>
             <ul className="text-secondary space-y-2">
-              <li>React / Next.js</li>
-              <li>TypeScript</li>
-              <li>Tailwind CSS</li>
-              <li>HTML5 / CSS3</li>
+                <li>React.js / Next.js</li>
+                <li>REST API integration</li>
+                <li>Tailwind CSS / CSS3</li>
+                <li>HTML5 / Bootstrap</li>
             </ul>
           </motion.div>
-          
+          {/* backend */}
           <motion.div 
             variants={fadeInUp}
             {...cardHover}
@@ -63,27 +66,29 @@ const Page = () => {
             <FaLaptopCode size={20} color='blue'/>
             <h3 className="text-xl font-semibold mb-2 mt-5">Backend</h3>
             <ul className="text-secondary space-y-2">
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>PostgreSQL</li>
-              <li>MongoDB</li>
+              <li>Node.js / Express</li>
+              <li>Django / Flask</li>
+              <li>FireBase</li>
             </ul>
           </motion.div>
-                    <motion.div 
+          {/* mobile development */}
+          <motion.div 
             variants={fadeInUp}
             {...cardHover}
             transition={cardHoverTransition}
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
           >
-            <FaLaptopCode size={20} color='blue'/>
+            <FaMobileAlt size={20} color='blue'/>
             <h3 className="text-xl font-semibold mb-2 mt-5">Mobile Development</h3>
             <ul className="text-secondary space-y-2">
               <li>React-Native</li>
               <li>Flutter</li>
-              <li>Dart Language</li>
+              <li>Android</li>
+              <li>iOS</li>
             </ul>
           </motion.div>
-                    <motion.div 
+          {/* programming languages */}
+          <motion.div 
             variants={fadeInUp}
             {...cardHover}
             transition={cardHoverTransition}
@@ -92,22 +97,51 @@ const Page = () => {
             <h3 className="text-xl font-semibold mb-2 mt-5">Programming Languages</h3>
             <ul className="text-secondary space-y-2">
               <li>Python</li>
-              <li>Javascript</li>
+              <li>TypeScript (Javascript)</li>
               <li>Dart</li>
             </ul>
           </motion.div>
+          {/* database */}
+            <motion.div 
+            variants={fadeInUp}
+            {...cardHover}
+            transition={cardHoverTransition}
+            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md" >
+            <SiMongodb size={20} color='blue'/>
+            <h3 className="text-xl font-semibold mb-2 mt-5">DataBase</h3>
+            <ul className="text-secondary space-y-2">
+              <li>PostSql</li>
+              <li>Mongo-DB</li>
+              <li>MySql</li>
+              <li>Neon</li>
+            </ul>
+          </motion.div>
+          {/* tools and others */}
           <motion.div 
             variants={fadeInUp}
             {...cardHover}
             transition={cardHoverTransition}
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md" >
-            <FaGraduationCap size={20} color='blue'/>
+            <FaGithub size={20} color='blue'/>
             <h3 className="text-xl font-semibold mb-2 mt-5">Tools & Others</h3>
             <ul className="text-secondary space-y-2">
               <li>Git / GitHub</li>
-              <li>FireBase</li>
+              <li>Prisma (ORM)</li>
+              <li>Clerk</li>
+            </ul>
+          </motion.div>
+          {/* deployement */}
+           <motion.div 
+            variants={fadeInUp}
+            {...cardHover}
+            transition={cardHoverTransition}
+            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md" >
+            <SiVercel size={20} color='blue'/>
+            <h3 className="text-xl font-semibold mb-2 mt-5">Deployment</h3>
+            <ul className="text-secondary space-y-2">
+              <li>Vercel</li>
+              <li>Netlify</li>
               <li>AWS</li>
-              <li>CI/CD</li>
             </ul>
           </motion.div>
         </motion.div>
