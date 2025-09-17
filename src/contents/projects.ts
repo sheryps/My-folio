@@ -13,12 +13,12 @@ export const projects: Project[] = [
       },
       {
         id:2,
-        title: 'Task Management App',
-        description: 'A collaborative task management application with real-time updates.',
-        technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
+        title: 'Expense Tracker AI',
+        description: 'AI-powered expense tracking app with intelligent insights, smart categorization, and personalized financial recommendations',
+        technologies: ['Next-js', 'Tailswind CSS', 'Neon', 'Prisma','Clerk'],
         githubLink: 'https://github.com',
         demoLink: 'https://demo.com',
-        image: '/projects/task-manager.webp',
+        image: '/projects/expense-tracker-ai.png',
       },
       {
         id:3,
