@@ -27,7 +27,7 @@ export const projects: Project[] = [
         technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
         githubLink: 'https://github.com',
         demoLink: 'https://demo.com',
-        image: '/projects/portfolio-website.jpg',
+        image: '/projects/foilo-image.png',
       },
       {
         id:4,
@@ -46,15 +46,6 @@ export const projects: Project[] = [
         githubLink: 'https://github.com',
         demoLink: 'https://my-tutor-landing-page-ochre.vercel.app',
         image: '/projects/mytutor.png',
-      },
-      {
-        id:6,
-        title: 'Chat Application',
-        description: 'A real-time chat application using WebSocket technology.',
-        technologies: ['React', 'Node.js', 'Socket.io'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/chat-app.png',
       },
       {
         id:7,
